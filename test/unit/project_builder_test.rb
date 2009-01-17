@@ -86,6 +86,11 @@ class ProjectBuilderTest < Test::Unit::TestCase
       @project.update_attributes(:uri => "scm://example.org")
       lambda { @project.build }.should raise_error(SCM::SCMUnknownError)
     end
+    
+    it "should't raise SCM::SCMUnknownError when the uri starts with git://" do
+      @project.update_attributes(:uri => "git://example.org")
+      lambda { @project.build }.should_not raise_error(SCM::SCMUnknownError)
+    end
   end
 
   describe "When deleting the code from disk" do
