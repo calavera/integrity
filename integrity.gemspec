@@ -37,6 +37,18 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<foca-sinatra-diddies>, [">= 0.0.2"])
       s.add_runtime_dependency(%q<thor>, [">= 0"])
       s.add_runtime_dependency(%q<bcrypt-ruby>, [">= 0"])
+      
+      s.add_development_dependency(%q<ParseTree>, [">=3.0.2"])
+      s.add_development_dependency(%q<jeremymacally-context>, [">=0.5.2"])
+      s.add_development_dependency(%q<jeremymacally-matchy>, [">=0.0.1"])
+      s.add_development_dependency(%q<jeremymacally-pending>, [">=0.1"])
+      s.add_development_dependency(%q<foca-storyteller>, [">=0.1.1"])
+      s.add_development_dependency(%q<ruby-debug>, [">=0.10.3"])
+      s.add_development_dependency(%q<brynary-webrat>, [">=0.3.2.2"])
+      s.add_development_dependency(%q<uuidtools>, [">=1.0.7"])
+      s.add_development_dependency(%q<redgreen>, [">=1.2.2"])
+      s.add_development_dependency(%q<rr>, [">=0.7.1"])
+      s.add_development_dependency(%q<mocha>, [">=0.9.4"])
     else
       s.add_dependency(%q<sinatra>, [">= 0.3.2"])
       s.add_dependency(%q<haml>, [">= 0"])
