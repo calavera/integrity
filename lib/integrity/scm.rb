@@ -14,7 +14,7 @@ module Integrity
   
       def self.scm_class_for(string)
         case string.to_s
-          when /^git:\/\/|\.git\/?$/ then Git
+          when /^git:\/\/|\.git\/?/ then Git
           else raise SCMUnknownError, "could not find any SCM based on string '#{string}'"
         end
       end
